@@ -113,6 +113,7 @@ enum {
 #define TCP_TIMESTAMP		24
 #define TCP_NOTSENT_LOWAT	25	/* limit number of unsent bytes in write queue */
 #define TCP_CC_INFO		26	/* Get Congestion Control (optional) info */
+#define MPTCP_ENABLED		42
 
 struct tcp_repair_opt {
 	__u32	opt_code;
