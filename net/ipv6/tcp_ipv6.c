@@ -1473,7 +1473,7 @@ static int tcp_v6_rcv(struct sk_buff *skb)
 	}
 
 process:
-	if (sk && sk->sk_state == TCP_TIME_WAIT) {
+	if (sk && sk->sk_state == TCP_TIME_WAIT)
 #ifdef CONFIG_GRKERNSEC_BLACKHOLE
 		ret = 2;
 #endif
